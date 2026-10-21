@@ -1,10 +1,10 @@
 # Pigeon Tax Department
 
-A tiny, static copypasta generator disguised as the Pigeon Tax Department. The site branding is intentionally unrelated to copypasta; the page title and metadata are optimized for copypasta-generator searches. No AI, account, build step, or API key required.
+A private, proprietary web project: a chaotic copypasta and absurd-text generator wrapped in an intentionally bureaucratic vintage design.
 
-## Run it
+## Run locally
 
-Open `index.html` in a browser. For the clipboard API and best compatibility, you can also serve the folder locally:
+Open `index.html` in a modern browser. To serve the folder locally:
 
 ```bash
 python -m http.server 8000
@@ -12,10 +12,16 @@ python -m http.server 8000
 
 Then visit `http://localhost:8000`.
 
-## Internet inspiration
-
-Every third refresh attempts to fetch a public Hacker News headline through its public Firebase API. The headline is used only as inspiration for a newly generated paragraph; the site does not reproduce article text. If the API, network, or browser blocks the request, the local generator continues to work. There is no backend and no AI connection.
+The generator runs in the browser and does not require a build step, account, API key, or AI service. Output is assembled locally from varied writing patterns and language fragments; it is not a search engine and does not claim to reproduce or index the internet.
 
 ## Deploy
 
-Upload `index.html` to GitHub Pages, Netlify, or Vercel as a static site. No build command is needed.
+This is a static site and can be deployed to a static hosting provider such as Vercel. No build command is required.
+
+## Copyright and usage
+
+Copyright © 2026 the project owner. All rights reserved.
+
+This repository and its contents are proprietary. No license is granted to copy, modify, redistribute, publish, sublicense, or use this code or its assets for another project without prior written permission from the copyright holder.
+
+This notice does not itself change the GitHub repository's visibility. Keep the repository set to **Private** in GitHub Settings.
