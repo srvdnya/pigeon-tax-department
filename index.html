@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#10110f" />
+  <meta name="description" content="A free random copypasta generator for absurd internet nonsense. Generate fresh meme-worthy copypastas instantly, copy them with one click, and refresh for more. No AI or sign-up required." />
+  <meta name="keywords" content="copypasta generator, random copypasta, funny copypasta, meme text generator, internet nonsense generator, shitpost generator, random text generator" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pigeon Tax Department — Free Copypasta Generator" />
+  <meta property="og:description" content="Generate absurd copypastas and premium-grade internet nonsense. Copy it. Refresh it. Confuse the group chat." />
+  <meta property="og:site_name" content="Pigeon Tax Department" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Pigeon Tax Department — Copypasta Generator" />
+  <meta name="twitter:description" content="A free random copypasta generator for internet nonsense. No AI, no sign-up, just copy and refresh." />
+  <meta name="application-name" content="Pigeon Tax Department" />
+  <title>Pigeon Tax Department — Free Copypasta Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{color-scheme:dark;--bg:#10110f;--panel:#171915;--line:#34372f;--text:#f1f2e9;--muted:#999d8f;--acid:#d7ff62;--mono:'DM Mono',monospace;--sans:'Space Grotesk',sans-serif}
+    *{box-sizing:border-box}html{min-height:100%;background:var(--bg)}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% 0%,#24291b 0%,var(--bg) 48%);color:var(--text);font-family:var(--sans);display:flex;flex-direction:column}
+    .wrap{width:min(880px,calc(100% - 40px));margin:0 auto;flex:1;display:flex;flex-direction:column}
+    header{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font:500 13px var(--mono);letter-spacing:.04em}.brand b{color:var(--acid);font-weight:500}.status{font:11px var(--mono);color:var(--muted);display:flex;gap:8px;align-items:center}.dot{width:7px;height:7px;border-radius:50%;background:var(--acid);box-shadow:0 0 12px #d7ff6270}
+    main{flex:1;display:flex;flex-direction:column;justify-content:center;padding:64px 0 72px}.eyebrow{font:11px var(--mono);text-transform:uppercase;letter-spacing:.16em;color:var(--acid);margin:0 0 20px}.headline{font-size:clamp(46px,8vw,84px);line-height:.94;letter-spacing:-.075em;font-weight:600;margin:0;max-width:750px}.headline span{color:var(--acid)}.sub{color:var(--muted);font:12px/1.8 var(--mono);margin:22px 0 38px}
+    .paper{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:clamp(22px,4vw,38px);min-height:270px;box-shadow:0 20px 80px #0003}.paper-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:25px;color:var(--muted);font:10px var(--mono);letter-spacing:.08em;text-transform:uppercase}.pill{border:1px solid #4c503e;color:var(--acid);padding:6px 8px;border-radius:2px;white-space:nowrap}.number{opacity:.65}.pasta{font-size:clamp(17px,2.4vw,21px);line-height:1.85;letter-spacing:-.02em;white-space:pre-wrap;overflow-wrap:anywhere;margin:0;min-height:160px;outline:none}.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.btn{height:58px;border:1px solid var(--line);background:transparent;color:var(--text);font:500 12px var(--mono);letter-spacing:.06em;cursor:pointer;transition:background .18s,color .18s,border-color .18s;display:flex;align-items:center;justify-content:center;gap:10px}.btn:hover{border-color:var(--acid)}.btn.primary{background:var(--acid);border-color:var(--acid);color:#171a0d}.btn.primary:hover{background:#e5ff9a}.btn:active{transform:translateY(1px)}.btn:focus-visible{outline:2px solid var(--acid);outline-offset:3px}.icon{font-size:18px;line-height:1}
+    .hint{display:flex;justify-content:space-between;gap:12px;margin-top:18px;color:#74796b;font:10px/1.7 var(--mono)}footer{border-top:1px solid var(--line);padding:20px 0;display:flex;justify-content:space-between;gap:15px;color:#777b70;font:10px var(--mono)}footer span:last-child{text-align:right}
+    .toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,12px);background:var(--acid);color:#171a0d;padding:12px 16px;font:11px var(--mono);opacity:0;pointer-events:none;transition:all .2s;border-radius:2px;z-index:5}.toast.show{opacity:1;transform:translate(-50%,0)}
+    @media(max-width:560px){.wrap{width:calc(100% - 28px)}header{height:68px}.status{font-size:9px}.sub{margin-bottom:28px}.paper{padding:20px;min-height:310px}.paper-top{align-items:flex-start}.pasta{line-height:1.75}.btn{height:54px;font-size:10px}.hint{flex-direction:column;gap:3px}footer{font-size:9px}}
+    @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header><div class="brand"><b>●</b> PIGEON TAX DEPT.</div><div class="status"><i class="dot"></i><span id="statusText">LOCAL NONSENSE ENGINE ONLINE</span></div></header>
+    <main>
+      <p class="eyebrow">/// a public service to nobody</p>
+      <h1 class="headline">Thoughts that<br>should've stayed <span>drafts.</span></h1>
+      <p class="sub">No context. No wisdom. No refunds.<br>Just hit refresh until the group chat gets concerned.</p>
+      <section aria-label="Generated copypasta">
+        <div class="paper">
+          <div class="paper-top"><span class="pill" id="sourceTag">100% ORGANIC NONSENSE</span><span class="number" id="counter">NO. 0001</span></div>
+          <p class="pasta" id="pasta" aria-live="polite">Loading premium nonsense…</p>
+        </div>
+        <div class="actions">
+          <button class="btn primary" id="copyBtn"><span class="icon">▣</span><span>COPY THIS BS</span></button>
+          <button class="btn" id="refreshBtn"><span class="icon">↻</span><span>MORE NONSENSE</span></button>
+        </div>
+        <div class="hint"><span>CTRL/CMD + C is a state of mind.</span><span id="sourceHint">GENERATED LOCALLY · NO AI INVOLVED</span></div>
+      </section>
+    </main>
+    <footer><span>BUILT WITH ZERO SUPERVISION</span><span>THE INTERNET WAS A MISTAKE, PROBABLY.</span></footer>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite">COPIED. GO CAUSE PROBLEMS.</div>
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  let count = 0, last = '';
+  const pick = a => a[Math.floor(Math.random() * a.length)];
+  const subjects = ['my ceiling fan','the office microwave','a suspiciously confident pigeon','the terms and conditions','my childhood Wi-Fi router','the moon','the group chat admin','a single uncooked noodle','the concept of Tuesday','the printer at work','my left AirPod','the LinkedIn algorithm','a traffic cone','the family WhatsApp group','the elevator mirror','an emotionally unavailable spreadsheet','the little loading circle','the entire economy','a mosquito with a personal vendetta','the last biscuit'];
+  const theories = ['has been collecting data on my aura','is clearly running a subscription-based psyop','has the energy of a regional manager','is legally classified as a side quest','was invented to sell us more cables','is one quarterly report away from sentience','has been gaslighting the general public since 2009','is proof that the simulation has budget cuts','is operating under a suspiciously generous NDA','is just capitalism wearing a fake moustache','has never once passed the vibe check','is powered entirely by unresolved childhood lore','is an elaborate tax strategy','is basically a government contractor with feathers','has been promoted beyond its level of competence'];
+  const openers = ['I need everyone to remain calm.','This is going to sound insane, but hear me out.','Nobody is talking about this and frankly it is embarrassing.','I have conducted absolutely no research and reached a devastating conclusion.','After years of silence, I can finally speak on this.','Not to sound like a conspiracy theorist, but the evidence is literally my gut feeling.','Quick question for the so-called experts.','I am tired of pretending this is normal.','I regret to inform you that I have connected the dots.','We need to have an uncomfortable conversation.'];
+  const connectors = ['Think about it.','Let that marinate.','I will not be taking questions at this time.','Coincidence? I have decided that it is not.','Please do your own research, by which I mean think about it while showering.','And yet we are expected to just go to work tomorrow.','Explain that without using the word “infrastructure.”','I have screenshots but they are spiritually classified.','The math is not mathing, but the vibes are peer-reviewed.','Wake up. The group project is compromised.'];
+  const endings = ['Anyway, my food is here.','I have emailed absolutely nobody about this. Yet.','Stay safe out there. Especially around the printer.','This post will be deleted when I become famous.','Please respect my privacy during this difficult discovery.','I am accepting apologies in the form of snacks.','Do not let them convince you that Wednesday is real.','My lawyer has advised me to log off, so naturally I am posting this.','Thank you for attending my completely unnecessary TED Talk.','I am going to lie down and let the algorithm win.'];
+  const fakeFacts = ['73% of statistics are invented during arguments','a peer-reviewed study conducted by me in a dream','three anonymous sources (all my burner accounts)','a graph I refuse to show you','a guy in a comment section with a blue check','the ancient science of just trust me bro','an internal memo I made up five seconds ago','a suspiciously specific number of vibes'];
+  const formats = [
+    () => `${pick(openers)} ${cap(pick(subjects))} ${pick(theories)}. ${pick(connectors)} According to ${pick(fakeFacts)}, this has been happening for at least ${pick(['four business days','seventeen fiscal quarters','one thousand emotional years','since the invention of soup','longer than anyone is comfortable admitting'])}. ${pick(endings)}`,
+    () => `BREAKING: ${cap(pick(subjects))} allegedly ${pick(theories)}. Sources close to the situation (me, five minutes ago) confirm that ${pick(subjects)} may also be involved. Experts are calling this “${pick(['deeply unserious','a logistical lasagna','the final boss of nonsense','an administrative concern','kind of a Tuesday'])}.” ${pick(connectors)} ${pick(endings)}`,
+    () => `My toxic trait is believing I could fix ${pick(subjects)} with a Google Sheet. First, we establish a framework. Second, we ${pick(['circle back','leverage synergies','disrupt the ecosystem','put a pin in it','operationalise the vibes'])}. Third, ${pick(subjects)} ${pick(theories)}. I have scheduled a meeting about it for never o’clock. ${pick(endings)}`,
+    () => `Imagine being ${pick(subjects)} and still having the audacity to ${pick(['exist without a roadmap','demand my attention','operate without a user manual','be this loud in this economy','not disclose your quarterly intentions'])}. Couldn't be me. I have a five-year plan and it currently consists of ${pick(['one half-charged phone','a suspicious amount of chutney','opening 46 tabs and forgetting why','vague resentment','an unpaid parking fine'])}. ${pick(connectors)} ${pick(endings)}`,
+    () => `THEY DON'T WANT YOU TO KNOW THIS: ${cap(pick(subjects))} ${pick(theories)}. The entire system relies on you not asking why ${pick(['the fridge light turns off','every app wants notifications','the printer needs emotional support','socks vanish in pairs','the loading bar stops at 99%'])}. I asked. The room got quiet. A pigeon made eye contact with me. ${pick(fakeFacts)}. ${pick(endings)}`
+  ];
+  function cap(s){return s.charAt(0).toUpperCase()+s.slice(1)}
+  function makeLocal(){let s=pick(formats)(); if(s===last) s=pick(formats)(); last=s; return s;}
+  async function getInternetInspiration(){
+    // Fetch a public Hacker News story title as optional inspiration. We do not copy article text;
+    // the title is only used as a subject seed for our own generated nonsense.
+    const controller = new AbortController(); const timer = setTimeout(() => controller.abort(), 2200);
+    try {
+      const topRes = await fetch('https://hacker-news.firebaseio.com/v0/topstories.json', {signal:controller.signal, cache:'no-store'});
+      if(!topRes.ok) throw new Error('feed unavailable');
+      const ids = await topRes.json(); if(!ids.length) throw new Error('empty feed');
+      const id = pick(ids.slice(0,35));
+      const storyRes = await fetch(`https://hacker-news.firebaseio.com/v0/item/${id}.json`, {signal:controller.signal, cache:'no-store'});
+      if(!storyRes.ok) throw new Error('story unavailable');
+      const story = await storyRes.json(); if(!story || !story.title) throw new Error('no title');
+      return story.title.slice(0,160);
+    } catch(e) { return null; } finally { clearTimeout(timer); }
+  }
+  function fromTrend(title){
+    const clean = title.replace(/[<>\u0000-\u001f]/g,' ').replace(/\s+/g,' ').trim();
+    const templates = [
+      () => `I saw the headline “${clean}” and unfortunately my brain has decided this is about ${pick(subjects)}. ${cap(pick(subjects))} ${pick(theories)}. I have no qualifications in this area, but I do have a browser with 38 tabs open. ${pick(connectors)} ${pick(endings)}`,
+      () => `A headline just entered my field of vision: “${clean}”. I will now explain why this proves that ${pick(subjects)} ${pick(theories)}. The evidence is ${pick(fakeFacts)} and a screenshot I cannot locate. ${pick(connectors)} ${pick(endings)}`,
+      () => `CURRENT EVENTS UPDATE: “${clean}”. I have translated this into normal language: ${pick(subjects)} ${pick(theories)}. This is why I stopped trusting any appliance with a digital display. ${pick(fakeFacts)}. ${pick(endings)}`
+    ];
+    return pick(templates)();
+  }
+  async function generate(){
+    $('refreshBtn').disabled=true; $('refreshBtn').style.opacity='.65';
+    const local = makeLocal(); $('pasta').textContent=local; count++;
+    $('counter').textContent='NO. '+String(count).padStart(4,'0'); $('sourceTag').textContent='100% ORGANIC NONSENSE'; $('sourceHint').textContent='GENERATED LOCALLY · NO AI INVOLVED'; $('statusText').textContent='LOCAL NONSENSE ENGINE ONLINE';
+    // Every few generations, try a public live feed. Local text is shown immediately so the site never waits on the internet.
+    const shouldFetch = count % 3 === 0;
+    if(shouldFetch){
+      $('statusText').textContent='CONSULTING THE INTERNET…';
+      const title = await getInternetInspiration();
+      if(title){ const fresh=fromTrend(title); if(fresh!==last){last=fresh;$('pasta').textContent=fresh;$('sourceTag').textContent='INTERNET-INSPIRED';$('sourceHint').textContent='PUBLIC HACKER NEWS HEADLINE · REMIXED';$('statusText').textContent='LIVE INTERNET NONSENSE ONLINE';} else {$('statusText').textContent='LOCAL NONSENSE ENGINE ONLINE';} }
+      else {$('statusText').textContent='OFFLINE? NONSENSE STILL WORKS';}
+    }
+    $('refreshBtn').disabled=false; $('refreshBtn').style.opacity='1';
+  }
+  let toastTimer;
+  function toast(msg){$('toast').textContent=msg;$('toast').classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').classList.remove('show'),1900)}
+  $('copyBtn').addEventListener('click', async()=>{
+    const text=$('pasta').textContent;
+    try{await navigator.clipboard.writeText(text);toast('COPIED. GO CAUSE PROBLEMS.')}catch(e){const area=document.createElement('textarea');area.value=text;area.style.position='fixed';area.style.opacity='0';document.body.appendChild(area);area.select();const ok=document.execCommand('copy');area.remove();toast(ok?'COPIED. GO CAUSE PROBLEMS.':'SELECT THE TEXT AND COPY IT.')}
+  });
+  $('refreshBtn').addEventListener('click',generate);
+  generate();
+})();
+</script>
+</body>
+</html>
